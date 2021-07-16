@@ -2,9 +2,14 @@
 
 This repository contains the code for:
 
-> [Joint Implicit Image Function for Guided Depth Super-Resolution]()
-> Jiaxiang Tang, Xiaokang Chen, Gang Zeng
-> ACM MM 2021
+> [Joint Implicit Image Function for Guided Depth Super-Resolution]()  
+> Jiaxiang Tang, Xiaokang Chen, Gang Zeng  
+> ACM MM 2021  
+
+
+
+
+![model](assets/model.png)
 
 
 
@@ -33,7 +38,7 @@ For example:
 ```bash
 # train JIIF with scale = 8 on the NYU dataset.
 OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=2 python main.py \
-    --name jiif --model JIIF --scale 8 \
+    --name jiif_8 --model JIIF --scale 8 \
     --sample_q 30720 --input_size 256 --train_batch 1 \
     --epoch 200 --eval_interval 10 \
     --lr 0.0001 --lr_step 60 --lr_gamma 0.2
@@ -71,3 +76,8 @@ If you find the code useful for your research, please use the following BibTeX e
 ```
 
 ```
+
+
+### Acknowledgement
+
+The model structure of this codebase is borrowed from [liif](https://github.com/yinboc/liif).
