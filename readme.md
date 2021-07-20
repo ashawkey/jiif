@@ -2,7 +2,7 @@
 
 This repository contains the code for:
 
-> [Joint Implicit Image Function for Guided Depth Super-Resolution]()  
+> [Joint Implicit Image Function for Guided Depth Super-Resolution](https://arxiv.org/abs/2107.08717)  
 > Jiaxiang Tang, Xiaokang Chen, Gang Zeng  
 > ACM MM 2021  
 
@@ -16,11 +16,11 @@ This repository contains the code for:
 ### Installation
 
 Environments:
-* Python 3.6
-* PyTorch 1.8.0
+* Python >= 3.6
+* PyTorch >= 1.6.0
 * tensorboardX
 * tqdm, opencv-python, Pillow
-* [NVIDIA apex](https://github.com/NVIDIA/apex)
+* [NVIDIA apex](https://github.com/NVIDIA/apex) (python-only build is ok.)
 
 
 
@@ -72,12 +72,18 @@ To test the performance of the pretrained models, please download the correspond
 
 ### Citation
 
-If you find the code useful for your research, please use the following BibTeX entry:
+If you find the code useful for your research, please use the following `BibTeX` entry:
+```
+@article{tang2021joint,
+    title        = {Joint Implicit Image Function for Guided Depth Super-Resolution},
+    author       = {Jiaxiang Tang, Xiaokang Chen, Gang Zeng},
+    year         = 2021,
+    journal      = {arXiv preprint arXiv:2107.08717}
+}
 ```
 
-```
 
 
-### Acknowledgement
+### Acknowledgment
 
-The model structure of this codebase is borrowed from [liif](https://github.com/yinboc/liif).
+The model implementation is based on [liif](https://github.com/yinboc/liif).
